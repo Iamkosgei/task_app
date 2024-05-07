@@ -13,7 +13,7 @@ class TaskList extends StatelessWidget {
         if (state is TaskLoaded) {
           return state.tasks.isEmpty
               ? const Center(
-                  child: Text('No taks, press + to add some task'),
+                  child: Text('No tasks, press + to add some task'),
                 )
               : Expanded(
                   child: ListView.builder(

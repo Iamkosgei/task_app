@@ -54,7 +54,7 @@ class TaskItem extends StatelessWidget {
                 showModalBottomSheet(
                   context: context,
                   isScrollControlled: true,
-                  builder: (_) => BlocProvider.value(
+                  builder: (context) => BlocProvider.value(
                     value: tasksCubit,
                     child: Padding(
                       padding: EdgeInsets.only(
